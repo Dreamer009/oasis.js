@@ -42,7 +42,7 @@
     // uncomment for debugging
     //QUnit.config.testTimeout = 60 * 1000;
 
-    var Oasis = new requireModule('oasis'),
+    var Oasis = new requireModule('oasis')['default'],
         oasis = null;
 
     requireModule('test/helpers/async').watchAsync(Oasis);

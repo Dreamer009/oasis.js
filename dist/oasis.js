@@ -2129,7 +2129,7 @@ define("oasis/base_adapter",
   ["rsvp","oasis/logger","oasis/util","oasis/shims","oasis/connect","oasis/message_channel","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __dependency6__, __exports__) {
     "use strict";
-    var RSVP = __dependency1__["default"];
+    var RSVP = __dependency1__;
 
     var Logger = __dependency2__["default"];
     var mustImplement = __dependency3__.mustImplement;
@@ -2253,7 +2253,7 @@ define("oasis/connect",
   ["rsvp","oasis/logger","oasis/util","oasis/shims","oasis/message_channel","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __exports__) {
     "use strict";
-    var RSVP = __dependency1__["default"];
+    var RSVP = __dependency1__;
     var Logger = __dependency2__["default"];
     var assert = __dependency3__.assert;
     var a_forEach = __dependency4__.a_forEach;
@@ -2487,7 +2487,7 @@ define("oasis/iframe_adapter",
     "use strict";
     /*global Window, UUID */
 
-    var RSVP = __dependency1__["default"];
+    var RSVP = __dependency1__;
     var Logger = __dependency2__["default"];
     var assert = __dependency3__.assert;
     var extend = __dependency3__.extend;
@@ -2716,7 +2716,7 @@ define("oasis/inline_adapter",
     "use strict";
     /*global self, postMessage, importScripts */
 
-    var RSVP = __dependency1__["default"];
+    var RSVP = __dependency1__;
     var Logger = __dependency2__["default"];
     var assert = __dependency3__.assert;
     var extend = __dependency3__.extend;
@@ -2862,7 +2862,7 @@ define("oasis/message_channel",
   ["rsvp","oasis/util","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
-    var RSVP = __dependency1__["default"];
+    var RSVP = __dependency1__;
     var extend = __dependency2__.extend;
     var mustImplement = __dependency2__.mustImplement;
 
@@ -3153,7 +3153,7 @@ define("oasis/sandbox",
   ["rsvp","oasis/logger","oasis/util","oasis/shims","oasis/message_channel","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __exports__) {
     "use strict";
-    var RSVP = __dependency1__["default"];
+    var RSVP = __dependency1__;
     var Logger = __dependency2__["default"];
     var assert = __dependency3__.assert;
     var uniq = __dependency3__.uniq;
@@ -3885,7 +3885,7 @@ define("oasis/webworker_adapter",
     "use strict";
     /*global self, postMessage, importScripts, UUID */
 
-    var RSVP = __dependency1__["default"];
+    var RSVP = __dependency1__;
     var Logger = __dependency2__["default"];
     var assert = __dependency3__.assert;
     var extend = __dependency3__.extend;
@@ -3984,7 +3984,7 @@ define("oasis/xhr",
     "use strict";
     /*global XDomainRequest */
 
-    var RSVP = __dependency1__["default"];
+    var RSVP = __dependency1__;
     var noop = __dependency2__.noop;
 
     var a_slice = Array.prototype.slice;
@@ -4093,4 +4093,4 @@ define("oasis/xhr",
     }
 
     __exports__.xhr = xhr;
-  });self.Oasis = requireModule('oasis'); self.oasis = new self.Oasis(); self.oasis.autoInitializeSandbox();
+  });self.Oasis = requireModule('oasis')['default']; self.oasis = new self.Oasis(); self.oasis.autoInitializeSandbox();

@@ -1,7 +1,7 @@
 /*global oasis:true */
 
 import Oasis from "oasis";
-import RSVP from "rsvp";
+module RSVP from "rsvp";
 import InlineAdapter from "oasis/inline_adapter";
 
 import { extend } from "oasis/util";

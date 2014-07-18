@@ -1,6 +1,6 @@
 /*global oasis:true */
 
-import RSVP from "rsvp";
+module RSVP from "rsvp";
 import { xhr } from "oasis/xhr";
 
 module('oasis.xhr', {
