@@ -2,7 +2,7 @@ define("oasis",
   ["rsvp","oasis/logger","oasis/version","oasis/util","oasis/config","oasis/sandbox","oasis/sandbox_init","oasis/xhr","oasis/events","oasis/service","oasis/connect","oasis/iframe_adapter","oasis/webworker_adapter","oasis/inline_adapter","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __dependency6__, __dependency7__, __dependency8__, __dependency9__, __dependency10__, __dependency11__, __dependency12__, __dependency13__, __dependency14__, __exports__) {
     "use strict";
-    var RSVP = __dependency1__["default"];
+    var RSVP = __dependency1__;
     var logger = __dependency2__["default"];
     var Version = __dependency3__["default"];
     var assert = __dependency4__.assert;
