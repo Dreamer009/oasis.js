@@ -113,7 +113,8 @@ oasis.createSandbox({
   type: 'html',
   capabilities: [ 'account' ],
   sandbox: {
-    popups: true
+    popups: true,
+    topNavigation: true
   }
 });
 ```
